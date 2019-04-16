@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj" />
+    <ProjectReference Include="..\..\SDK\Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj" />
   </ItemGroup>
 
 </Project>

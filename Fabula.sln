@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neomer.Fabula.Web", "Neomer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SDK", "SDK", "{64036976-6B82-4825-976E-1638A7B47A26}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neomer.Fabula.SDK", "Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj", "{E2650443-FCFB-444F-99A9-45C25E74AC84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neomer.Fabula.SDK", "SDK\Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj", "{E2650443-FCFB-444F-99A9-45C25E74AC84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D238955-F5F7-445F-BD09-41A5229286B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neomer.Fabula.SDK.Tests", "Neomer.Fabula.SDK.Tests\Neomer.Fabula.SDK.Tests.csproj", "{187EC621-DDE7-4C9D-960F-8075EFC2B6B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neomer.Fabula.SDK.Tests", "Tests\Neomer.Fabula.SDK.Tests\Neomer.Fabula.SDK.Tests.csproj", "{187EC621-DDE7-4C9D-960F-8075EFC2B6B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neomer.Fabula.SDK.Web", "Neomer.Fabula.SDK.Web\Neomer.Fabula.SDK.Web.csproj", "{0EC21A89-E8A3-4626-ADD9-7037360A9CD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neomer.Fabula.SDK.Web", "SDK\Neomer.Fabula.SDK.Web\Neomer.Fabula.SDK.Web.csproj", "{0EC21A89-E8A3-4626-ADD9-7037360A9CD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

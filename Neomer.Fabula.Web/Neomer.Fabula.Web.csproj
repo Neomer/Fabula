@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Neomer.Fabula.SDK.Web\Neomer.Fabula.SDK.Web.csproj" />
-    <ProjectReference Include="..\Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj" />
+    <ProjectReference Include="..\SDK\Neomer.Fabula.SDK.Web\Neomer.Fabula.SDK.Web.csproj" />
+    <ProjectReference Include="..\SDK\Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj" />
   </ItemGroup>
 
 </Project>
