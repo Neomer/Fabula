@@ -1,10 +1,20 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Neomer.Fabula.SDK.Core.Injection
 {
-    public class ComponentManager
+    [Service]
+    [InjectProperties]
+    public class ComponentManager : IComponentManager
     {
+        [Injected]
+        public IServiceCollection container { get; set; }
+
+
+        public IEnumerable<T> GetComponents<T>()
+        {
+            return null;
+        }
+
     }
 }

@@ -1,7 +1,5 @@
 ﻿using Autofac;
 using Autofac.Extensions.DependencyInjection;
-using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -12,7 +10,6 @@ using Neomer.Fabula.SDK.Core.Injection;
 using Neomer.Fabula.Web.Controllers;
 using Neomer.Fabula.Web.Models;
 using System;
-using System.Linq;
 
 namespace Neomer.Fabula.Web
 {
@@ -55,9 +52,14 @@ namespace Neomer.Fabula.Web
             });
             */
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services
+                .AddMvc()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+                .AddControllersAsServices();
 
             var builder = InjectionInitializer.CreateBuilder(typeof(Startup).Assembly, services);
+
+
             ApplicationContainer = builder.Build();
 
             return new AutofacServiceProvider(this.ApplicationContainer);

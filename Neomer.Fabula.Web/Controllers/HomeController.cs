@@ -1,21 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Neomer.Fabula.Web.Models;
 using Neomer.Fabula.SDK.Web.Core;
-using NHibernate;
+using Neomer.Fabula.SDK.Core.Injection;
 
 namespace Neomer.Fabula.Web.Controllers
 {
-    public class HomeController : Controller
+    [InjectProperties]
+    public class HomeController : FbBaseWebController
     {
-        public HomeController() 
-        {
-
-        }
+        [Injected]
+        public IComponentManager ComponentManager { get; set; }
 
         public IActionResult Index()
         {
