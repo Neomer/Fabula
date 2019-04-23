@@ -33,7 +33,7 @@ namespace Neomer.Fabula.SDK.Core.Injection
                     }
                     else
                     {
-                        throw new UnknownPropertyTypeInjectionException();
+                        throw new UnknownPropertyTypeInjectionException(p);
                     }
                 }
             }

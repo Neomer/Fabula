@@ -8,8 +8,10 @@ using System.Text;
 
 namespace Neomer.Fabula.SDK.Web.Core
 {
+    [InjectProperties]
     public class FbBaseWebController : Controller
     {
+        [Injected]
         public ISession Session { get; set; }
 
         public FbBaseWebController()

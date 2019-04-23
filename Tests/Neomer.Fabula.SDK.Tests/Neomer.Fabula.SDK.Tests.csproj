@@ -16,4 +16,8 @@
     <ProjectReference Include="..\..\SDK\Neomer.Fabula.SDK\Neomer.Fabula.SDK.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Core\Injection\" />
+  </ItemGroup>
+
 </Project>
